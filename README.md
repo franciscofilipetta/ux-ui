@@ -1,4 +1,4 @@
-# ux-ui
+# UX/UI
 Este proyecto se desarrolla en el marco de la asignatura Diseño de Experiencia de Usuario e Interfaz (UX/UI) de la carrera Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional, Facultad Regional Córdoba (UTN FRC).
 
 El objetivo principal es aplicar los conceptos de diseño centrado en el usuario (DCU) para resolver una problemática real: la gestión y captación de fondos de manera digital.
