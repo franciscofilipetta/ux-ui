@@ -1,0 +1,291 @@
+.como-funciona-page {
+  min-height: 100vh;
+}
+
+/* Hero */
+.como-hero {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.como-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.como-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Pasos Section */
+.pasos-section {
+  padding: 80px 0;
+  background: var(--color-background);
+}
+
+.pasos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.paso-card {
+  background: var(--color-surface);
+  padding: 32px 24px;
+  border-radius: var(--radius-xl);
+  text-align: center;
+  position: relative;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.paso-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.paso-icono {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 150, 105, 0.1);
+  border-radius: var(--radius-full);
+}
+
+.paso-icono svg {
+  width: 32px;
+  height: 32px;
+  color: var(--color-primary);
+}
+
+.paso-numero-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 28px;
+  background: var(--color-primary);
+  color: white;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paso-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+}
+
+.paso-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* Caracteristicas Section */
+.caracteristicas-section {
+  padding: 80px 0;
+  background: var(--color-surface);
+}
+
+.caracteristicas-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 48px;
+}
+
+.caracteristicas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.caracteristica-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.caracteristica-check {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-success);
+  border-radius: var(--radius-full);
+}
+
+.caracteristica-check svg {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+.caracteristica-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.caracteristica-item p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 0;
+  background: var(--color-background);
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 48px;
+}
+
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.faq-item summary {
+  padding: 20px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+  transition: transform var(--transition-fast);
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-item p {
+  padding: 0 24px 20px;
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* CTA Final */
+.cta-final {
+  background: linear-gradient(135deg, var(--color-text-primary) 0%, #334155 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta-final h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cta-final p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 32px;
+}
+
+.btn-comenzar {
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  background: white;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-comenzar:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .pasos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .como-hero {
+    padding: 60px 20px;
+  }
+
+  .como-hero h1 {
+    font-size: 2rem;
+  }
+
+  .pasos-section,
+  .caracteristicas-section,
+  .faq-section {
+    padding: 60px 0;
+  }
+
+  .pasos-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .caracteristicas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-final {
+    padding: 60px 20px;
+  }
+
+  .cta-final h2 {
+    font-size: 1.5rem;
+  }
+}
