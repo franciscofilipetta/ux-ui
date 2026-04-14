@@ -1,0 +1,12 @@
+# vscode
+.git/
+.vscode/
+
+# dependencies
+node_modules/
+
+# snapshot
+package-lock.json
+
+
+.vercel
